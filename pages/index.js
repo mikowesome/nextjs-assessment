@@ -25,7 +25,7 @@ const Home = ({ articles }) => {
                 </a>
             </header>
             {/* <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700" /> */}
-            <div id="articles" className="mb-20 lg:grid lg:grid-cols-2 scroll-mt-6">
+            <div id="articles" className="mb-20 lg:grid lg:grid-cols-2 scroll-mt-6 md:scroll-mt-12">
                 {
                     articles.map(article => <Article key={article.id} article={article} />)
                 }
