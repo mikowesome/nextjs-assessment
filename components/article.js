@@ -5,7 +5,9 @@ const Article = ({ article }) => {
   return (
     <article className="flex items-center justify-center py-12 lg:items-start lg:max-w-lg">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm"> 
-            <Link href='/'><Image width='384' height='208' className="rounded-t-lg max-h-52 w-full" src={article.image} alt={`illustration of ${article.title}`} /></Link>
+            <Link href='/'>
+                <Image width='500' height='500' className="rounded-t-lg max-h-52 w-full" src={article.image} alt={`illustration of ${article.title}`} />
+            </Link>
             <div className="p-5 lg:h-96 lg:flex lg:flex-col">
                 <Link href='/'>
                     <h2 
