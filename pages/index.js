@@ -15,11 +15,11 @@ const Home = ({ articles }) => {
                 <h1 className="text-3xl text-center font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-5xl xl:text-6xl mb-4">
                     Cybersecurity threats 101
                 </h1>
-                <p className="mb-6 text-lg text-center font-medium text-gray-500 lg:text-3xl sm:text-xl xl:text-5xl dark:text-gray-400">
+                <p className="mb-6 text-base text-center font-medium text-gray-500 lg:text-2xl sm:text-lg xl:text-4xl dark:text-gray-400">
                     What a cybersecurity expert understands: A blog about different cyber threats and how you can protect yourself.
                 </p>
-                <a className="animate-bounce cursor-pointer" href="#articles">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                <a className="animate-bounce cursor-pointer mt-16" href="#articles">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-20 w-20">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </a>
