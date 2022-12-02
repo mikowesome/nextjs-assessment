@@ -1,8 +1,13 @@
-import { articles } from "../data/articles"
 import Article from "../components/article"
 import Head from "next/head"
+import { connectDb } from "../config/connectDb"
 
-const Home = ({ articles }) => {
+const Home = (props) => {
+
+    const { articles } = props
+
+    if (props.error) return <p>{props.error.text}</p>
+
   return (
     <>
         <Head>
@@ -36,10 +41,13 @@ const Home = ({ articles }) => {
 }
 export default Home
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
+    const query = 'select * from articles'
+    const data = await connectDb(query)
+
     return {
         props: {
-            articles
+            articles: data
         }
     }
 }
